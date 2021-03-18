@@ -2,9 +2,11 @@
 
 Continuous applications such as device monitoring and anomaly detection often require real-time aggregated statistics over unbounded data streams. While existing stream processing systems such as Flink, Spark, and Storm support processing of streaming aggregations, their optimizations are limited with respect to the dynamic nature of the data, and therefore are suboptimal when the workload changes and/or when there is data skew. In this paper, we present AdCom, which is an adaptive combiner for stream processing engines. The use of AdCom in aggregation queries enables pre-aggregating tuples upstream (i.e., before data shuffling) followed by global aggregation downstream. In contrast to existing approaches, AdCom can automatically adjust the number of tuples to pre-aggregate depending on the data rate and available network. Our experimental study using real-world streaming workloads shows that using AdCom leads to 2.5--9x higher sustainable throughput without compromising latency.
 
- - paper link: [https://edbt2021proceedings.github.io/docs/p266.pdf](https://edbt2021proceedings.github.io/docs/p266.pdf)
-
-![AdCom implemented in Apache Flink 1.11.2 JobManager and TaskManager](flink-adcom/src/main/resources/images/Adcom-with-PI-controller.png)
+ - [Paper](https://edbt2021proceedings.github.io/docs/p266.pdf)
+ - [Video pitch](http://openproceedings.org/2021/conf/edbt/pitch/e266.mp4)
+ - [Video presentation](http://openproceedings.org/2021/conf/edbt/presentation/v266.mp4)
+ - Poster
+![AdCom implemented in Apache Flink 1.11.2 JobManager and TaskManager](flink-adcom/src/main/resources/images/a266.png)
 
 ## Description
 
